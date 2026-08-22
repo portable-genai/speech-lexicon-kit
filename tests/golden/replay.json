@@ -1,0 +1,919 @@
+{
+  "as_of": "2026-03-01T12:00:00+00:00",
+  "cases": {
+    "en-AU": {
+      "case_digest": "sha256:6a93f59419c1d0f3fc2043409ddda85af2b5c5e729d73ce0269069bb7a2bf9fe",
+      "language": "en"
+    },
+    "en-GB": {
+      "case_digest": "sha256:6a93f59419c1d0f3fc2043409ddda85af2b5c5e729d73ce0269069bb7a2bf9fe",
+      "language": "en"
+    },
+    "en-HK": {
+      "case_digest": "sha256:6a93f59419c1d0f3fc2043409ddda85af2b5c5e729d73ce0269069bb7a2bf9fe",
+      "language": "en"
+    },
+    "en-IN": {
+      "case_digest": "sha256:6a93f59419c1d0f3fc2043409ddda85af2b5c5e729d73ce0269069bb7a2bf9fe",
+      "language": "en"
+    },
+    "en-SG": {
+      "case_digest": "sha256:6a93f59419c1d0f3fc2043409ddda85af2b5c5e729d73ce0269069bb7a2bf9fe",
+      "language": "en"
+    },
+    "en-US": {
+      "case_digest": "sha256:6a93f59419c1d0f3fc2043409ddda85af2b5c5e729d73ce0269069bb7a2bf9fe",
+      "language": "en"
+    },
+    "ja-JP": {
+      "case_digest": "sha256:c55ac40d6913e6fb817a0a33a923bdfd8ab9fa18e57b2354dfd3bd2078d62e00",
+      "language": "ja"
+    }
+  },
+  "details": {
+    "en": {
+      "closed_adherence": {
+        "as_of": "2026-03-01T12:00:00+00:00",
+        "results": [
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": 15600,
+            "first_ms": 4000,
+            "last_ms": 19600,
+            "missing_entry_ids": [],
+            "outcome": "satisfied",
+            "requirement_id": "R1-opening-sequence",
+            "steps": [
+              {
+                "entry_id": "recording_notice",
+                "hit": {
+                  "char_end": 96,
+                  "char_start": 71,
+                  "end_ms": 5800,
+                  "entry_id": "recording_notice",
+                  "lexicon_id": "replay-en",
+                  "matched_text": "This call may be recorded",
+                  "normalised_text": "this call may be recorded",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 4000,
+                  "tags": [
+                    "disclosure"
+                  ],
+                  "turn_index": 0
+                },
+                "position": 0
+              },
+              {
+                "entry_id": "identity_check",
+                "hit": {
+                  "char_end": 63,
+                  "char_start": 37,
+                  "end_ms": 12800,
+                  "entry_id": "identity_check",
+                  "lexicon_id": "replay-en",
+                  "matched_text": "confirm your date of birth",
+                  "normalised_text": "confirm your date of birth",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 10500,
+                  "tags": [
+                    "verification"
+                  ],
+                  "turn_index": 2
+                },
+                "position": 1
+              },
+              {
+                "entry_id": "advice_disclaimer",
+                "hit": {
+                  "char_end": 80,
+                  "char_start": 60,
+                  "end_ms": 19600,
+                  "entry_id": "advice_disclaimer",
+                  "lexicon_id": "replay-en",
+                  "matched_text": "not financial advice",
+                  "normalised_text": "not financial advice",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 19100,
+                  "tags": [
+                    "disclosure"
+                  ],
+                  "turn_index": 4
+                },
+                "position": 2
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [],
+            "outcome": "out_of_order",
+            "requirement_id": "R2-inverted-sequence",
+            "steps": [
+              {
+                "entry_id": "advice_disclaimer",
+                "hit": null,
+                "position": 0
+              },
+              {
+                "entry_id": "recording_notice",
+                "hit": null,
+                "position": 1
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [
+              "callback_offer"
+            ],
+            "outcome": "absent",
+            "requirement_id": "R3-callback-offer",
+            "steps": [
+              {
+                "entry_id": "callback_offer",
+                "hit": null,
+                "position": 0
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [],
+            "outcome": "unverifiable",
+            "requirement_id": "R4-closing-in-time",
+            "steps": [
+              {
+                "entry_id": "closing",
+                "hit": {
+                  "char_end": 51,
+                  "char_start": 30,
+                  "end_ms": null,
+                  "entry_id": "closing",
+                  "lexicon_id": "replay-en",
+                  "matched_text": "Thank you for calling",
+                  "normalised_text": "thank you for calling",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": null,
+                  "tags": [
+                    "courtesy"
+                  ],
+                  "turn_index": 5
+                },
+                "position": 0
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": 15600,
+            "first_ms": 4000,
+            "last_ms": 19600,
+            "missing_entry_ids": [],
+            "outcome": "late",
+            "requirement_id": "R5-tight-window",
+            "steps": [
+              {
+                "entry_id": "recording_notice",
+                "hit": {
+                  "char_end": 96,
+                  "char_start": 71,
+                  "end_ms": 5800,
+                  "entry_id": "recording_notice",
+                  "lexicon_id": "replay-en",
+                  "matched_text": "This call may be recorded",
+                  "normalised_text": "this call may be recorded",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 4000,
+                  "tags": [
+                    "disclosure"
+                  ],
+                  "turn_index": 0
+                },
+                "position": 0
+              },
+              {
+                "entry_id": "advice_disclaimer",
+                "hit": {
+                  "char_end": 80,
+                  "char_start": 60,
+                  "end_ms": 19600,
+                  "entry_id": "advice_disclaimer",
+                  "lexicon_id": "replay-en",
+                  "matched_text": "not financial advice",
+                  "normalised_text": "not financial advice",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 19100,
+                  "tags": [
+                    "disclosure"
+                  ],
+                  "turn_index": 4
+                },
+                "position": 1
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [
+              "advice_disclaimer"
+            ],
+            "outcome": "absent",
+            "requirement_id": "R6-customer-must-disclose",
+            "steps": [
+              {
+                "entry_id": "advice_disclaimer",
+                "hit": null,
+                "position": 0
+              }
+            ]
+          }
+        ],
+        "transcript_id": "T-REPLAY-EN-001"
+      },
+      "closed_hits": [
+        {
+          "char_end": 96,
+          "char_start": 71,
+          "end_ms": 5800,
+          "entry_id": "recording_notice",
+          "lexicon_id": "replay-en",
+          "matched_text": "This call may be recorded",
+          "normalised_text": "this call may be recorded",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 4000,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 0
+        },
+        {
+          "char_end": 96,
+          "char_start": 76,
+          "end_ms": 5800,
+          "entry_id": "recording_notice",
+          "lexicon_id": "replay-en",
+          "matched_text": "call may be recorded",
+          "normalised_text": "call may be recorded",
+          "phrase_id": "loose",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 5200,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 0
+        },
+        {
+          "char_end": 40,
+          "char_start": 34,
+          "end_ms": 8900,
+          "entry_id": "product_reference",
+          "lexicon_id": "replay-en",
+          "matched_text": "policy",
+          "normalised_text": "policy",
+          "phrase_id": "exact",
+          "role": "customer",
+          "speaker_id": "spk-customer-1",
+          "start_ms": 8400,
+          "tags": [
+            "topic"
+          ],
+          "turn_index": 1
+        },
+        {
+          "char_end": 63,
+          "char_start": 37,
+          "end_ms": 12800,
+          "entry_id": "identity_check",
+          "lexicon_id": "replay-en",
+          "matched_text": "confirm your date of birth",
+          "normalised_text": "confirm your date of birth",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 10500,
+          "tags": [
+            "verification"
+          ],
+          "turn_index": 2
+        },
+        {
+          "char_end": 80,
+          "char_start": 60,
+          "end_ms": 19600,
+          "entry_id": "advice_disclaimer",
+          "lexicon_id": "replay-en",
+          "matched_text": "not financial advice",
+          "normalised_text": "not financial advice",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 19100,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 4
+        },
+        {
+          "char_end": 51,
+          "char_start": 30,
+          "end_ms": null,
+          "entry_id": "closing",
+          "lexicon_id": "replay-en",
+          "matched_text": "Thank you for calling",
+          "normalised_text": "thank you for calling",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": null,
+          "tags": [
+            "courtesy"
+          ],
+          "turn_index": 5
+        }
+      ],
+      "live_adherence": {
+        "as_of": "2026-03-01T12:00:00+00:00",
+        "results": [
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [
+              "identity_check"
+            ],
+            "outcome": "pending",
+            "requirement_id": "L1-identity-check-pending",
+            "steps": [
+              {
+                "entry_id": "identity_check",
+                "hit": null,
+                "position": 0
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [
+              "identity_check"
+            ],
+            "outcome": "absent",
+            "requirement_id": "L2-identity-check-overdue",
+            "steps": [
+              {
+                "entry_id": "identity_check",
+                "hit": null,
+                "position": 0
+              }
+            ]
+          }
+        ],
+        "transcript_id": "T-REPLAY-EN-002"
+      },
+      "live_hits": [
+        {
+          "char_end": 96,
+          "char_start": 71,
+          "end_ms": 5800,
+          "entry_id": "recording_notice",
+          "lexicon_id": "replay-en",
+          "matched_text": "This call may be recorded",
+          "normalised_text": "this call may be recorded",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 4000,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 0
+        },
+        {
+          "char_end": 96,
+          "char_start": 76,
+          "end_ms": 5800,
+          "entry_id": "recording_notice",
+          "lexicon_id": "replay-en",
+          "matched_text": "call may be recorded",
+          "normalised_text": "call may be recorded",
+          "phrase_id": "loose",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 5200,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 0
+        },
+        {
+          "char_end": 40,
+          "char_start": 34,
+          "end_ms": 8900,
+          "entry_id": "product_reference",
+          "lexicon_id": "replay-en",
+          "matched_text": "policy",
+          "normalised_text": "policy",
+          "phrase_id": "exact",
+          "role": "customer",
+          "speaker_id": "spk-customer-1",
+          "start_ms": 8400,
+          "tags": [
+            "topic"
+          ],
+          "turn_index": 1
+        }
+      ],
+      "normalisation": {
+        "accents": {
+          "digest": "sha256:f048e455d0b369f37b9bb1738c714e410ee1777a1133eb257cc01ebf9b4e132c",
+          "text": "café naïve résumé"
+        },
+        "casing_and_punctuation": {
+          "digest": "sha256:2606af81263e5e5697f0b30357363fa1c0f28f9e0aa6889b15954f9b4f682bf8",
+          "text": "this call may be recorded for quality"
+        },
+        "edges": {
+          "digest": "sha256:c3aa060cb70c5ee1690104a85b29dae625353a19f69d6d83f2f6310d56f23fc1",
+          "text": "spaced out"
+        },
+        "full_width": {
+          "digest": "sha256:68c674d082a6f13069cb113c6d8abb129614e59be17a5ab4a14b9cac3af617da",
+          "text": "the call"
+        },
+        "hyphenation": {
+          "digest": "sha256:5ee45082a34ab808889c7aa3d67aab888e5e2560e84b60213a4d86755fb3e58d",
+          "text": "re insurance and co operate 12 345"
+        }
+      }
+    },
+    "ja": {
+      "closed_adherence": {
+        "as_of": "2026-03-01T12:00:00+00:00",
+        "results": [
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": 14400,
+            "first_ms": 5200,
+            "last_ms": 19600,
+            "missing_entry_ids": [],
+            "outcome": "satisfied",
+            "requirement_id": "R1-opening-sequence",
+            "steps": [
+              {
+                "entry_id": "recording_notice",
+                "hit": {
+                  "char_end": 28,
+                  "char_start": 10,
+                  "end_ms": 5800,
+                  "entry_id": "recording_notice",
+                  "lexicon_id": "replay-ja",
+                  "matched_text": "この通話は品質向上のため録音されます",
+                  "normalised_text": "コノ通話ハ品質向上ノタメ録音サレマス",
+                  "phrase_id": "loose",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 5200,
+                  "tags": [
+                    "disclosure"
+                  ],
+                  "turn_index": 0
+                },
+                "position": 0
+              },
+              {
+                "entry_id": "identity_check",
+                "hit": {
+                  "char_end": 11,
+                  "char_start": 7,
+                  "end_ms": 11000,
+                  "entry_id": "identity_check",
+                  "lexicon_id": "replay-ja",
+                  "matched_text": "本人確認",
+                  "normalised_text": "本人確認",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 10500,
+                  "tags": [
+                    "verification"
+                  ],
+                  "turn_index": 2
+                },
+                "position": 1
+              },
+              {
+                "entry_id": "advice_disclaimer",
+                "hit": {
+                  "char_end": 37,
+                  "char_start": 26,
+                  "end_ms": 19600,
+                  "entry_id": "advice_disclaimer",
+                  "lexicon_id": "replay-ja",
+                  "matched_text": "投資助言ではありません",
+                  "normalised_text": "投資助言デハアリマセン",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 19100,
+                  "tags": [
+                    "disclosure"
+                  ],
+                  "turn_index": 4
+                },
+                "position": 2
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [],
+            "outcome": "out_of_order",
+            "requirement_id": "R2-inverted-sequence",
+            "steps": [
+              {
+                "entry_id": "advice_disclaimer",
+                "hit": null,
+                "position": 0
+              },
+              {
+                "entry_id": "recording_notice",
+                "hit": null,
+                "position": 1
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [
+              "callback_offer"
+            ],
+            "outcome": "absent",
+            "requirement_id": "R3-callback-offer",
+            "steps": [
+              {
+                "entry_id": "callback_offer",
+                "hit": null,
+                "position": 0
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [],
+            "outcome": "unverifiable",
+            "requirement_id": "R4-closing-in-time",
+            "steps": [
+              {
+                "entry_id": "closing",
+                "hit": {
+                  "char_end": 17,
+                  "char_start": 6,
+                  "end_ms": null,
+                  "entry_id": "closing",
+                  "lexicon_id": "replay-ja",
+                  "matched_text": "ありがとうございました",
+                  "normalised_text": "アリガトウゴザイマシタ",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": null,
+                  "tags": [
+                    "courtesy"
+                  ],
+                  "turn_index": 5
+                },
+                "position": 0
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": 14400,
+            "first_ms": 5200,
+            "last_ms": 19600,
+            "missing_entry_ids": [],
+            "outcome": "late",
+            "requirement_id": "R5-tight-window",
+            "steps": [
+              {
+                "entry_id": "recording_notice",
+                "hit": {
+                  "char_end": 28,
+                  "char_start": 10,
+                  "end_ms": 5800,
+                  "entry_id": "recording_notice",
+                  "lexicon_id": "replay-ja",
+                  "matched_text": "この通話は品質向上のため録音されます",
+                  "normalised_text": "コノ通話ハ品質向上ノタメ録音サレマス",
+                  "phrase_id": "loose",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 5200,
+                  "tags": [
+                    "disclosure"
+                  ],
+                  "turn_index": 0
+                },
+                "position": 0
+              },
+              {
+                "entry_id": "advice_disclaimer",
+                "hit": {
+                  "char_end": 37,
+                  "char_start": 26,
+                  "end_ms": 19600,
+                  "entry_id": "advice_disclaimer",
+                  "lexicon_id": "replay-ja",
+                  "matched_text": "投資助言ではありません",
+                  "normalised_text": "投資助言デハアリマセン",
+                  "phrase_id": "exact",
+                  "role": "agent",
+                  "speaker_id": "spk-agent-1",
+                  "start_ms": 19100,
+                  "tags": [
+                    "disclosure"
+                  ],
+                  "turn_index": 4
+                },
+                "position": 1
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [
+              "advice_disclaimer"
+            ],
+            "outcome": "absent",
+            "requirement_id": "R6-customer-must-disclose",
+            "steps": [
+              {
+                "entry_id": "advice_disclaimer",
+                "hit": null,
+                "position": 0
+              }
+            ]
+          }
+        ],
+        "transcript_id": "T-REPLAY-JA-001"
+      },
+      "closed_hits": [
+        {
+          "char_end": 28,
+          "char_start": 10,
+          "end_ms": 5800,
+          "entry_id": "recording_notice",
+          "lexicon_id": "replay-ja",
+          "matched_text": "この通話は品質向上のため録音されます",
+          "normalised_text": "コノ通話ハ品質向上ノタメ録音サレマス",
+          "phrase_id": "loose",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 5200,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 0
+        },
+        {
+          "char_end": 28,
+          "char_start": 22,
+          "end_ms": 5800,
+          "entry_id": "recording_notice",
+          "lexicon_id": "replay-ja",
+          "matched_text": "録音されます",
+          "normalised_text": "録音サレマス",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 5200,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 0
+        },
+        {
+          "char_end": 11,
+          "char_start": 7,
+          "end_ms": 11000,
+          "entry_id": "identity_check",
+          "lexicon_id": "replay-ja",
+          "matched_text": "本人確認",
+          "normalised_text": "本人確認",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 10500,
+          "tags": [
+            "verification"
+          ],
+          "turn_index": 2
+        },
+        {
+          "char_end": 22,
+          "char_start": 19,
+          "end_ms": 17600,
+          "entry_id": "product_reference",
+          "lexicon_id": "replay-ja",
+          "matched_text": "ご案内",
+          "normalised_text": "ゴ案内",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 17100,
+          "tags": [
+            "topic"
+          ],
+          "turn_index": 4
+        },
+        {
+          "char_end": 37,
+          "char_start": 26,
+          "end_ms": 19600,
+          "entry_id": "advice_disclaimer",
+          "lexicon_id": "replay-ja",
+          "matched_text": "投資助言ではありません",
+          "normalised_text": "投資助言デハアリマセン",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 19100,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 4
+        },
+        {
+          "char_end": 17,
+          "char_start": 6,
+          "end_ms": null,
+          "entry_id": "closing",
+          "lexicon_id": "replay-ja",
+          "matched_text": "ありがとうございました",
+          "normalised_text": "アリガトウゴザイマシタ",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": null,
+          "tags": [
+            "courtesy"
+          ],
+          "turn_index": 5
+        }
+      ],
+      "live_adherence": {
+        "as_of": "2026-03-01T12:00:00+00:00",
+        "results": [
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [
+              "identity_check"
+            ],
+            "outcome": "pending",
+            "requirement_id": "L1-identity-check-pending",
+            "steps": [
+              {
+                "entry_id": "identity_check",
+                "hit": null,
+                "position": 0
+              }
+            ]
+          },
+          {
+            "as_of": "2026-03-01T12:00:00+00:00",
+            "elapsed_ms": null,
+            "first_ms": null,
+            "last_ms": null,
+            "missing_entry_ids": [
+              "identity_check"
+            ],
+            "outcome": "absent",
+            "requirement_id": "L2-identity-check-overdue",
+            "steps": [
+              {
+                "entry_id": "identity_check",
+                "hit": null,
+                "position": 0
+              }
+            ]
+          }
+        ],
+        "transcript_id": "T-REPLAY-JA-002"
+      },
+      "live_hits": [
+        {
+          "char_end": 28,
+          "char_start": 10,
+          "end_ms": 5800,
+          "entry_id": "recording_notice",
+          "lexicon_id": "replay-ja",
+          "matched_text": "この通話は品質向上のため録音されます",
+          "normalised_text": "コノ通話ハ品質向上ノタメ録音サレマス",
+          "phrase_id": "loose",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 5200,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 0
+        },
+        {
+          "char_end": 28,
+          "char_start": 22,
+          "end_ms": 5800,
+          "entry_id": "recording_notice",
+          "lexicon_id": "replay-ja",
+          "matched_text": "録音されます",
+          "normalised_text": "録音サレマス",
+          "phrase_id": "exact",
+          "role": "agent",
+          "speaker_id": "spk-agent-1",
+          "start_ms": 5200,
+          "tags": [
+            "disclosure"
+          ],
+          "turn_index": 0
+        }
+      ],
+      "normalisation": {
+        "dash_hyphen": {
+          "digest": "sha256:b4a7eb95c91897c35506aa439b3ad490416462f257c870ee613f9cfec4e1cc1b",
+          "text": "コーヒー"
+        },
+        "dash_minus": {
+          "digest": "sha256:b4a7eb95c91897c35506aa439b3ad490416462f257c870ee613f9cfec4e1cc1b",
+          "text": "コーヒー"
+        },
+        "half_width_kana": {
+          "digest": "sha256:7adaa26cc8163688516cda1fb4feb9a59959287bb2c8ee73d20d326a20db2f7a",
+          "text": "コーヒーデータabc123"
+        },
+        "prolonged_kept": {
+          "digest": "sha256:877eb86c4e65d61015b9275371d33d43949c030cb651264f0c5dee3170034321",
+          "text": "ビルトビール"
+        },
+        "spacing_and_kana": {
+          "digest": "sha256:9820d094f613e76349d20e6c3cef0da15e53b975275405787587680d8fa53cfc",
+          "text": "コノオ通話ハ品質ノタメ録音サレマス"
+        }
+      }
+    }
+  },
+  "locales": [
+    "en-AU",
+    "en-GB",
+    "en-HK",
+    "en-IN",
+    "en-SG",
+    "en-US",
+    "ja-JP"
+  ],
+  "overall_digest": "sha256:a449e0b00aeab94d496f490a26fa3326f1b3d802f821c93a306753c9ae06df76",
+  "schema": "speech-lexicon-kit/golden-replay/v1"
+}
