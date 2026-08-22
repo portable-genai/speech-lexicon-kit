@@ -33,7 +33,7 @@ dependencies = []
 [project.optional-dependencies]
 # The test/lint toolchain. Ruff is pinned EXACTLY so formatting never drifts across machines.
 dev = [
-  "ruff==0.15.18",
+  "ruff==0.16.3",
   "mypy>=1.10",
   "pytest>=8.2",
 ]
