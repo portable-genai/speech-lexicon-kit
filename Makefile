@@ -1,9 +1,10 @@
 PY ?= .venv/bin/python
 
-.PHONY: help install lint format-check typecheck test eval gate clean regenerate-golden
+.PHONY: help install lock lint format-check typecheck test eval gate clean regenerate-golden
 
 help:
-	@echo "install            install the package with its dev extra (editable)"
+	@echo "install            locked install from requirements-dev.lock, then the project"
+	@echo "lock               recompile requirements-dev.lock (needs uv + network)"
 	@echo "lint               ruff check"
 	@echo "format-check       ruff format --check (ruff pinned exactly in pyproject.toml)"
 	@echo "typecheck          mypy --strict over src"
@@ -12,8 +13,15 @@ help:
 	@echo "gate               the hard gate: all of the above, offline"
 	@echo "regenerate-golden  rewrite tests/golden/replay.json (only when intended)"
 
+# The LOCKED install, which is what CI performs, so `make install` and the hosted gate
+# agree about versions. An unlocked resolve is an authoring step, not a gate step.
 install:
-	$(PY) -m pip install -e ".[dev]"
+	$(PY) -m pip install -r requirements-dev.lock
+	$(PY) -m pip install --no-deps -e .
+
+# Authoring only: needs uv and network. Run after any dependency change and commit it.
+lock:
+	uv pip compile --quiet --extra dev pyproject.toml -o requirements-dev.lock
 
 lint:
 	$(PY) -m ruff check src tests scripts
