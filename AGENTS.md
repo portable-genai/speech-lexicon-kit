@@ -15,7 +15,7 @@ this package supplies the kernel around them.
 
 Consumers designed for, not just the first one: E3 (`conversation-qa-scorecard`), E1
 (`contact-centre-conversations`), E5 (`proactive-service-outreach`), G3
-(`app-fraud-interdiction`), Cmp1 (`trade-comms-surveillance`), H6
+(`app-fraud-interdiction`), `trade-comms-surveillance`, H6
 (`meeting-knowledge-capture`) and F5 (`control-room-handover`, TTS brief only).
 
 ## Commands
